@@ -5,6 +5,10 @@ sudo apt update
 sudo apt -y install vim
 sudo apt -y install git
 
+# EDIT ME #
+git config --global user.name "Your Name"
+git config --global user.email "youremail@domain.com"
+
 # zsh + oh-my-zsh
 sudo apt -y install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
