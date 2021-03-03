@@ -1,5 +1,6 @@
 #!/bin/sh
 
+## TERMINAL ##
 sudo apt update
 sudo apt -y install vim
 sudo apt -y install git
@@ -12,9 +13,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 echo "plugins+=(zsh-nvm)" >> .zshrc
 
+# install better npm completion
+git clone https://github.com/lukechilds/zsh-better-npm-completion ~/.oh-my-zsh/custom/plugins/zsh-better-npm-completion
+echo "plugins+=(zsh-better-npm-completion)" >> .zshrc
+
+# source plugins
 echo "source ~/.zsh-nvm/zsh-nvm.plugin.zsh" >> .zshrc
 
-
+## SOFTWARE ##
 # syncthing keys and installation
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
 echo "deb https://apt.syncthing.net/ syncthing stable" | sudo tee /etc/apt/sources.list.d/syncthing.list
