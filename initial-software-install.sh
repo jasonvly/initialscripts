@@ -11,7 +11,7 @@ git config --global user.email "youremail@domain.com"
 
 # zsh + oh-my-zsh
 sudo apt -y install zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # install nvm
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
@@ -24,6 +24,7 @@ echo "plugins+=(zsh-better-npm-completion)" >> .zshrc
 # source plugins
 echo "source ~/.zsh-nvm/zsh-nvm.plugin.zsh" >> .zshrc
 
+## DESKTOP SOFTWARE ##
 ## SOFTWARE ##
 # syncthing keys and installation
 curl -s https://syncthing.net/release-key.txt | sudo apt-key add -
